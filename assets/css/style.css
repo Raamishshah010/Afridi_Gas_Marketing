@@ -366,3 +366,37 @@ body {
 .footer .footerBottom a {
     color: #999999;
 }
+
+.aboutBreadCrumb {
+    padding-top: 4rem;
+    background-image: linear-gradient(to bottom, #0000002d, #262626), url('/assets/image/aboutBG.jpg');
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.aboutBreadCrumb h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.aboutBreadCrumb p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primaryColor);
+}
+
+.aboutBreadCrumb a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondaryColor);
+    text-decoration: none;
+}
+
+.about2 {
+    margin-top: 3rem;
+    font-size: .8rem;
+    line-height: 1.6rem
+}
