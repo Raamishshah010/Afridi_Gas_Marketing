@@ -380,12 +380,14 @@ body {
 .aboutBreadCrumb h1 {
     font-size: 1.8rem;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .aboutBreadCrumb p {
     font-size: 1rem;
     font-weight: 400;
     color: var(--primaryColor);
+    text-transform: initial;
 }
 
 .aboutBreadCrumb a {
@@ -399,4 +401,43 @@ body {
     margin-top: 3rem;
     font-size: .8rem;
     line-height: 1.6rem
+}
+
+
+/* directors */
+
+.directors {
+    margin-top: 8rem;
+}
+
+.directors .directorCard {
+    margin-top: 2rem;
+    padding: .4rem;
+    box-shadow: 0 0 1rem rgba(211, 211, 211, 0.125);
+}
+
+.directors .directorCard .directorCard_img {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.directors .directorCard .directorCard_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.directors .directorCard .directorCard_content {
+    font-size: 1rem;
+}
+
+.directors .directorCard .directorCard_content h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #424242;
+}
+
+.directors .directorCard .directorCard_content p {
+    font-size: .9rem;
+    color: var(--primaryColor);
 }
