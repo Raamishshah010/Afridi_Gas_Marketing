@@ -529,3 +529,8 @@ body {
     cursor: pointer;
     border-radius: 2rem;
 }
+
+
+.gallaryImages img{
+    cursor: pointer;
+}
