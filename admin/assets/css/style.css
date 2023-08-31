@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --primaryColor: #c32933;
+    --secondaryColor: #ceaf47;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    padding: .5rem 3rem;
+}
+
+.btn-primary:hover {
+    color: var(--primaryColor);
+    background-color: transparent;
+    border: 1px solid var(--primaryColor);
+    padding: .5rem 3rem;
+}
+
+.navbar {
+    font-size: 1rem;
+}
+
+.navbar .navbar-nav {
+    margin-right: 5rem;
+}
+
+.navbar .navbar-nav li a {
+    margin-right: 2rem;
+    color: #4a4a4a;
+}
+
+.navbar .navbar-nav li a:hover {
+    margin-right: 2rem;
+    color: var(--primaryColor);
+}
+
+.navbar .navbar-nav li a.active {
+    margin-right: 2rem;
+    color: #c32933;
+    position: relative;
+}
+
+.navbar .navbar-nav li a.active::after {
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    left: calc(50% - 17px);
+    width: 2.2rem;
+    height: 2px;
+    background-color: var(--primaryColor);
+}
+
+.navbarCustom .navbarTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem 4rem;
+    font-size: .8rem;
+}
+
+.navbarCustom .navbarTop .navbarLogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    font-size: .8rem;
+}
+
+.navbarCustom .navbarTop .navbarLogo .logoBold {
+    font-size: 1.2rem;
+    color: var(--primaryColor);
+}
+
+.navbarCustom .navbarContact {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbarCustom .mainNavbar {
+    background-color: var(--primaryColor);
+    height: 50px;
+}
+
+.navbarCustom .mainNavbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: .9rem;
+    margin-left: 8rem;
+    list-style: none;
+    color: #fff;
+    height: 100%;
+}
+
+.navbarCustom .mainNavbar ul li {
+    padding-top: .8rem;
+    height: 100%;
+}
+
+.navbarCustom .mainNavbar ul li a {
+    font-size: .9rem;
+    list-style: none;
+    color: #f3f3f3;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navbarCustom .mainNavbar ul li a.active {
+    margin-right: 2rem;
+    color: #ffffff;
+    position: relative;
+}
+
+.navbarCustom .mainNavbar ul li a.active::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbarCustom .mainNavbar ul li a:hover {
+    color: #d0d0d0;
+}
+
+
+/* HERO */
+
+.hero .carousel-indicators li {
+    position: relative;
+    float: right;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(255, 255, 255, 0.703);
+}
+
+
+/* mission */
+
+.mission {
+    background-color: #eefcff;
+    padding-block: 3rem;
+    text-align: center;
+    color: #292929;
+}
+
+.mission h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.mission h5::after {
+    content: " ";
+    position: absolute;
+    background-color: #c32933;
+    width: 1.8rem;
+    height: 2px;
+    top: 8px;
+    left: -2.4rem;
+}
+
+.mission h5::before {
+    content: " ";
+    position: absolute;
+    background-color: #c32933;
+    width: 1.8rem;
+    height: 2px;
+    top: 8px;
+    right: -2.4rem;
+}
+
+.mission h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.mission p {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.about {
+    margin-block: 5rem;
+}
+
+.about .aboutContent h5 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.about .aboutContent p {
+    font-size: .9rem;
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+}
+
+.product p {
+    font-size: .8rem !important;
+    margin-bottom: 4px !important;
+    display: flex;
+    align-items: center;
+}
+
+.product .productsCard {
+    display: flex;
+    flex-direction: column;
+    gap: -1rem;
+    margin-top: 2rem;
+}
+
+.product .iconCheck {
+    margin-right: .5rem;
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+}
+
+
+/* gallery */
+
+.gallery {
+    background-color: #eefcff;
+    padding-block: 3rem;
+    text-align: center;
+    overflow: hidden;
+    color: #424242;
+    padding-bottom: 4rem;
+}
+
+.gallery h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.gallery h5::after {
+    content: " ";
+    position: absolute;
+    background-color: #c32933;
+    width: 1.8rem;
+    height: 2px;
+    top: 8px;
+    left: -2.4rem;
+}
+
+.gallery h5::before {
+    content: " ";
+    position: absolute;
+    background-color: #c32933;
+    width: 1.8rem;
+    height: 2px;
+    top: 8px;
+    right: -2.4rem;
+}
+
+.gallery h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.gallery p {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.gallery img {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.gallery img:hover {
+    transform: scale(3);
+    z-index: 100;
+}
+
+
+/* ceoMessage */
+
+.ceoMessage {
+    font-size: 1rem;
+}
+
+.ceoMessage img {
+    height: 600px;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #3b3b3b;
+    color: #999999;
+    padding-block: 4rem;
+    position: relative;
+}
+
+.footer .bx {
+    color: var(--primaryColor);
+}
+
+.footer h6 {
+    color: #fafafa;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.footer ul {
+    padding-bottom: 2rem;
+}
+
+.footer ul li {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    list-style: none;
+    font-size: .8rem;
+}
+
+.footer .footerBottom {
+    font-size: .8rem;
+    background-color: var(--primaryColor);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-top: 2rem;
+    color: #fafafa;
+}
+
+.footer .footerBottom a {
+    color: #999999;
+}
+
+.aboutBreadCrumb {
+    padding-top: 4rem;
+    background-image: linear-gradient(to bottom, #0000002d, #262626), url('/assets/image/aboutBG.jpg');
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.aboutBreadCrumb h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.aboutBreadCrumb p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primaryColor);
+    text-transform: initial;
+}
+
+.aboutBreadCrumb a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondaryColor);
+    text-decoration: none;
+}
+
+.about2 {
+    margin-top: 3rem;
+    font-size: .8rem;
+    line-height: 1.6rem
+}
+
+
+/* directors */
+
+.directors {
+    margin-top: 8rem;
+}
+
+.directors .directorCard {
+    margin-top: 2rem;
+    padding: .4rem;
+    box-shadow: 0 0 1rem rgba(211, 211, 211, 0.125);
+}
+
+.directors .directorCard .directorCard_img {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.directors .directorCard .directorCard_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.directors .directorCard .directorCard_content {
+    font-size: 1rem;
+}
+
+.directors .directorCard .directorCard_content h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #424242;
+}
+
+.directors .directorCard .directorCard_content p {
+    font-size: .9rem;
+    color: var(--primaryColor);
+}
+
+.contactCards {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contactCard {
+    background: var(--primaryColor);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fafafa;
+    margin-top: 2rem;
+}
+
+.contactCard img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 2rem;
+}
+
+
+.dashboardHeroCard .dashboardCard{
+    background-color: var(--primaryColor);
+    padding: 20px;
+    color: #fff;
+}
+
+.dashboardHeroCard .dashboardCard h4{
+    font-size: 1rem;
+}
+
+
+.directorCard{
+    box-shadow: 0 0 1rem 0 rgba(157, 157, 157, 0.2)
+}
+
+.directorCard .directorCardConent{
+    padding: 1rem;
+}
