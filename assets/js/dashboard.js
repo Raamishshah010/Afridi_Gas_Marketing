@@ -20,7 +20,7 @@ db.collection('directorCollection').get().then((result) => {
                                     <div class="cardBtns">
 
                                         <span class="editBtn">
-                                            <a class="btn btn-primary" href="../admin/edit-director?id=${director.data().docID}">Edit</a>
+                                            <a class="btn btn-primary" href="../admin/edit-director.html?id=${director.data().docID}">Edit</a>
                                         </span>
                                         
                                     </div>
@@ -64,8 +64,8 @@ db.collection('gallaryCollection').get().then((result) => {
 
             $(`#gallaryImageModel`).attr('src', director.data().image);
 
-            
-            localStorage.setItem('gallaryID', result.data().docID)
+
+            localStorage.setItem('gallaryID', director.data().docID)
 
         })
 
@@ -97,3 +97,42 @@ function deleteImage() {
 
     }
 }
+
+
+
+
+
+db.collection('gallaryCollection').limit(10).get().then((result) => {
+
+    $('#gallaryCount').html(result.docs.length)
+    let i = 0;
+
+
+    result.forEach((director) => {
+        $(`#galleryListIndex`).append(`
+        <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
+                            <div class="gallaryImage">
+                                <img src="${director.data().image}" width="100%" alt="">
+                            </div>
+                        </div>
+        
+        `)
+
+
+
+        $(`#selectImage${i}`).on('click', function () {
+
+            $(`#gallaryImageModel`).attr('src', director.data().image);
+
+
+            localStorage.setItem('gallaryID', director.data().docID)
+
+        })
+
+        i++;
+
+    });
+
+}).catch((err) => {
+    window.alert(err.message);
+});
