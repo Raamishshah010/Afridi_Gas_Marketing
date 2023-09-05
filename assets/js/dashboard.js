@@ -6,6 +6,12 @@ db.collection('directorCollection').get().then((result) => {
     $('#directorCount').html(result.docs.length)
 
     result.forEach((director) => {
+        if (director.data().directorRole === "CEO") {
+            $('#ceo').attr('src', director.data().image)
+        }
+
+
+
         $(`#directorsList`).append(`
         <div class="col-sm-12 col-md-12 col-lg-6 mt-5">
                             <div class="directorCard">
@@ -49,7 +55,7 @@ db.collection('gallaryCollection').get().then((result) => {
 
 
     result.forEach((director) => {
-        $(`#galleryList`).append(`
+        $(`#galleryListIndex`).append(`
         <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
                             <div class="gallaryImage">
                                 <img data-toggle="modal" data-target="#exampleModal" src="${director.data().image}" id="selectImage${i}" width="100%" alt="">
@@ -58,10 +64,17 @@ db.collection('gallaryCollection').get().then((result) => {
         
         `)
 
+        $(`#galleryList`).append(`
+        <div class="col-sm-12 col-md-4 col-lg-3">
+        <img src="${director.data().image}" class="img-fluid" alt="">
+    </div>
+        
+        `)
+
 
 
         $(`#selectImage${i}`).on('click', function () {
-
+            
             $(`#gallaryImageModel`).attr('src', director.data().image);
 
 
@@ -102,37 +115,37 @@ function deleteImage() {
 
 
 
-db.collection('gallaryCollection').limit(10).get().then((result) => {
+// db.collection('gallaryCollection').limit(10).get().then((result) => {
 
-    $('#gallaryCount').html(result.docs.length)
-    let i = 0;
+//     $('#gallaryCount').html(result.docs.length)
+//     let i = 0;
 
 
-    result.forEach((director) => {
-        $(`#galleryListIndex`).append(`
-        <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
-                            <div class="gallaryImage">
-                                <img src="${director.data().image}" width="100%" alt="">
-                            </div>
-                        </div>
+//     result.forEach((director) => {
+//         $(`#galleryListIndex`).append(`
+//         <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
+//                             <div class="gallaryImage">
+//                                 <img src="${director.data().image}" width="100%" alt="">
+//                             </div>
+//                         </div>
         
-        `)
+//         `)
 
 
 
-        $(`#selectImage${i}`).on('click', function () {
+//         $(`#selectImage${i}`).on('click', function () {
 
-            $(`#gallaryImageModel`).attr('src', director.data().image);
+//             $(`#gallaryImageModel`).attr('src', director.data().image);
 
 
-            localStorage.setItem('gallaryID', director.data().docID)
+//             localStorage.setItem('gallaryID', director.data().docID)
 
-        })
+//         })
 
-        i++;
+//         i++;
 
-    });
+//     });
 
-}).catch((err) => {
-    window.alert(err.message);
-});
+// }).catch((err) => {
+//     window.alert(err.message);
+// });

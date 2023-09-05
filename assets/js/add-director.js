@@ -51,7 +51,7 @@ function addDirector() {
                 let directorRef = db.collection("directorCollection").doc();
 
                 let data = {
-                    directorName,
+                    directorName: directorName,
                     directorRole,
                     image: downloadURL,
                     docID: directorRef.id
