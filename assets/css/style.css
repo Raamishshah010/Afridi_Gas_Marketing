@@ -501,6 +501,14 @@ body {
 }
 
 
+.ourTable{
+    font-size: .8rem;
+}
+
+.ourTable thead{
+    background-color: var(--primaryColor);
+    color: #fff;
+}
 
 
 

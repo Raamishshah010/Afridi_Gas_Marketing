@@ -33,8 +33,8 @@
 
         <div class="mainNavbar">
             <ul>
-                <li><a href="../admin/index.html" class="active">Dashboard</a></li>
-                <li><a href="../admin/all-distributors.html">Distributors</a></li>
+                <li><a href="../admin/index.html" >Dashboard</a></li>
+                <li><a href="../admin/all-distributors.html" class="active">Distributors</a></li>
                 
                 
             </ul>
@@ -56,19 +56,28 @@
                             <div class="addDirectorForm">
                                 
                                     <div class="formInput">
-                                        <input type="text" placeholder="Enter director name" id="directorName" >
+                                        <input type="text" placeholder="Enter Agency Code" id="agencyCode" >
                                     </div>
 
                                     <div class="formInput">
-                                        <input type="text" placeholder="Enter director designation" id="directorRole">
+                                        <input type="text" placeholder="Name Of Distributor" id="nameOfDistributor">
                                     </div>
 
-                                        <div class="form-group">
-                                            <input type="file" class="form-control-file"  id="image">
-                                        </div>
+                                    <div class="formInput">
+                                        <input type="text" placeholder="Enter Agency Name" id="agencyName" >
+                                    </div>
 
-                                    <div class="formBtn">
-                                        <button onclick="addDirector()" id="subBtn">Submit</button>
+                                    <div class="formInput">
+                                        <input type="text" placeholder="Enter Agency Address" id="agencyAddress" >
+                                    </div>
+
+                                    <div class="formInput">
+                                        <input type="text" placeholder="Enter Contact" id="contact" >
+                                    </div>
+
+
+                                    <div class="formBtn mt-5">
+                                        <button onclick="addDistributor()" id="subBtn">Submit</button>
                                     </div>
                             </div>
                         </div>
@@ -92,7 +101,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 
 <script src="/assets/js/firebase.js"></script>
-<script src="/assets/js/add-director.js"></script>
+<script src="/assets/js/add-distributor.js"></script>
     
 </body>
 </html>
