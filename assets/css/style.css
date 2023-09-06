@@ -527,6 +527,8 @@ body {
         display: none;
         color: #fff;
     }
+
+   
 }
 
 
@@ -534,6 +536,9 @@ body {
 
     .navbarCustom .mainNavbar ul {
         display: none;
+    }
+    .carousel-item .carouselImage {
+        height: 100% !important;
     }
 }
 
