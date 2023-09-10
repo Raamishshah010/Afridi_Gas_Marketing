@@ -12,3 +12,7 @@ firebase.initializeApp(firebaseConfig);
 let db = firebase.firestore();
 
 
+function logout(){
+    localStorage.clear();
+    window.location.href = "/admin/index.html"
+}

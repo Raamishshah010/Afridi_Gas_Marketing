@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+.body {
+    
+    font-size: 65.5%;
+    height: 100vh;
+}
+
+.login{
+    position: relative;
+}
+
+.login .loginForm{
+    width: 400px;
+    height: 600px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%)
+}
+
+.login .formLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.login .formLogo img{
+    height: 80px;
+    width: 80px;
+}
+
+.formInputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+
+.formInputs .formInput{
+    
+    width: 80%;
+    margin-inline: 3rem;
+    
+}
+
+.formInputs .formInput input{
+    border: none;
+    width: 100%;
+    outline: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    
+}
+
+.formInputs .formBtn button{
+    border: none;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+    color: #fff;
+    background-color: #c32933;
+    cursor: pointer;
+    border-radius: 8px;
+}
