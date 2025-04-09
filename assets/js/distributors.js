@@ -13,7 +13,6 @@ db.collection('customerCollection').orderBy("sNo", 'asc').get().then((result) =>
             <td>${item.data().agencyName}</td>
             <td>${item.data().agencyAddress}</td>
             <td>${item.data().contact}</td>
-            <td style="display:flex;align-items:center; gap: 20px"><a href="../../admin/edit-distributor.html?id=${item.data().docID}" style="font-size:24px;"><i class='bx bxs-edit-alt'></i></a>   <span id="deleteDest${i}"><i class='bx bxs-trash' style="color:crimson; font-size:24px; cursor:pointer"></i></span> </td>
             
         </tr>
         `);

@@ -34,9 +34,9 @@
 
         <div class="mainNavbar">
             <ul>
-                <li><a href="../admin/dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="../admin/dashboard.html" >Dashboard</a></li>
                 <li><a href="../admin/all-distributors.html">Distributors</a></li>
-                <li><a href="../admin/all-bowsers.html">Bowsers</a></li>
+                <li><a href="../admin/all-bowsers.html" class="active">Bowsers</a></li>
                 
                 
             </ul>
@@ -50,22 +50,22 @@
                 <div class="col-sm-12 col-md-12 col-lg-12 mb-5">
                     <!-- DIRECTOR LIST -->
 
-                    <h5>All Distributors</h5>
-                    <a class="btn btn-primary" href="../admin/add-distributors.html">+ Add Distributor</a>
+                    <h5>All Bowsers</h5>
+                    <a class="btn btn-primary" href="../admin/add-bowser.html">+ Add Bowsers</a>
                     <div class="ourTable mt-5">
                         <table class="table table-responsive-sm">
                                 <thead>
                                 <tr>
                                     <th scope="col">S.No.</th>
-                                    <th scope="col">Agency Code</th>
-                                    <th scope="col">Name Of Distributor	</th>
-                                    <th scope="col">Agency Name	</th>
-                                    <th scope="col">Address</th>
-                                    <th scope="col">Contact Number</th>
+                                    <th scope="col">Vehicle No.</th>
+                                    <th scope="col">Bowser No. </th>
+                                    <th scope="col">Capacity </th>
+                                    <th scope="col">Total Axel</th>
+                                    <th scope="col">Other Details</th>
                                     <th scope="col">Handle</th>
                                 </tr>
                                 </thead>
-                                <tbody id="customerList">
+                                <tbody id="bowserList">
                                 <!-- <tr>
                                     <th scope="row">1</th>
                                     <td>Mark</td>
@@ -120,7 +120,7 @@
 
 
     <script src="/assets/js/firebase.js"></script>
-    <script src="/assets/js/all-distributor.js"></script>
+    <script src="/assets/js/all-bowsers.js"></script>
 <script src="/assets/js/loginCheck.js"></script>
 
 </body>
