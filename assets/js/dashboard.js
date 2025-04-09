@@ -90,6 +90,24 @@ db.collection('gallaryCollection').get().then((result) => {
     window.alert(err.message);
 });
 
+db.collection('customerCollection').get().then((result) => {
+
+    $('#distributorsCount').html(result.docs.length)
+    
+
+}).catch((err) => {
+    window.alert(err.message);
+});
+
+db.collection('bowserCollection').get().then((result) => {
+
+    $('#bowsersCount').html(result.docs.length)
+    
+
+}).catch((err) => {
+    window.alert(err.message);
+});
+
 
 
 function deleteImage() {
